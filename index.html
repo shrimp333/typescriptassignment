@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer type="module" src="./dist/index.js"></script>
+    <script src=""></script>t
+</head>
+<body>
+    <div id="app">
+        <div id="results">
+            <div class="result" id="colourResult"></div>
+            <div class="result" id="bodyPartResult">
+                <p id="bodyPartText"></p>
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="spin-btn">Spin!</button>
+        </div>
+        <div id="statsDiv">
+            <h2> Stats </h2>
+            <label for="colourSelect">Colour</label>
+            <select id="colourSelect">
+            </select>
+
+            <label for="bodyPartSelect">Body Part</label>
+            <select id="bodyPartSelect">
+            </select>
+
+            <button id="statsBtn">Get Stats</button>
+
+            <div id="statsResults">
+                No spins recorded
+            </div>
+
+            <hr>
+            <div id="historyDiv">
+                <h2>History</h2>
+                <table id="historyTable">
+                    <thead>
+                        <tr>
+                            <th class="num">Num</th>
+                            <th>Colour</th>
+                            <th>Body Part</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTableBody">
+                    </tbody>
+                </table>
+
+            </div>
+</body>
+</html>
